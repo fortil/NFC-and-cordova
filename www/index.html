@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Access-Control-Allow-Origin" content="*">
+  <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Record App</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <style>
+    .btnCurrent{
+      position: relative; margin-top: 10px; margin-bottom: 10px;
+    }
+    .hYw {
+      height: 100%;
+      width: 100%;
+    }
+    .alignAbsoluteCenter {
+      height: 100%;
+      display: flex; justify-content: center; align-items: center;
+    }
+    .mensaje {
+      visibility: hidden;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="col-xs-12">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+      <h2 align="center">Record Audio</h2>
+      <div class="alignAbsoluteCenter">
+        <button id="recordSong" type="button" class="btn btn-danger col-xs-12 btn-lg btnCurrent">Grabar audio</button>
+      </div>
+      <div class="mensaje alignAbsoluteCenter"></div>
+    </div>
+    <div class="col-xs-1"></div>
+  </div>
+  <div class="col-xs-12 text-warning" style="position: absolute; bottom: 10px; right: 10px">William Penagos</div>
+
+  <script src="./js/libs/jquery.min.js"></script>
+  <script src="./js/libs/bootstrap.min.js"></script>
+  <script src="./js/libs/download.js"></script>
+  <script src="./cordova.js"></script>
+  <script src="./js/libs/my.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
