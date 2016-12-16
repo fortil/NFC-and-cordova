@@ -1,7 +1,6 @@
 'use strict'
 
 var BookIt = BookIt || {};
-BookIt.urlServer = "http://192.168.0.16/upload/upload.php";
 
 var app = {
 
@@ -26,6 +25,7 @@ function inicialice(){
   jQuery(document).ready( $ => {
     console.log('ready!!')
 
+    // Ejemplo de código NFC que recive un mensaje en texto plano
     nfc.addNdefListener (
       function (nfcEvent) {
         var tag = nfcEvent.tag,
