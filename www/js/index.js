@@ -16,7 +16,6 @@ var app = {
 if($.browser && $.browser.webkit){
   app.initialize();
 }else{
-  BookIt.state = 'download'
   inicialice();
 }
 
